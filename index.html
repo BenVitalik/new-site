@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minoxi Applicator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">MinoxiPro</div>
+      <nav>
+        <a href="#product">Продукт</a>
+        <a href="#reviews">Відгуки</a>
+        <a href="#faq">FAQ</a>
+        <button class="account-btn" id="openModal">Кабінет</button>
+        <button class="buy-header">Купити</button>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hht">Ідеальне нанесення міноксидилу</h1>
+
+        <a href="#product" class="hero-btn">Замовити зараз</a>
+      </div>
+    </section>
+
+    <!-- PRODUCT SECTION -->
+    <section class="product-section" id="product">
+      <div class="product-gallery">
+        <img
+          id="mainImage"
+          src="https://images.unsplash.com/photo-1585386959984-a41552231658"
+          alt="product"
+        />
+        <div class="thumbnails">
+          <img
+            src="https://images.unsplash.com/photo-1585386959984-a41552231658"
+            onclick="changeImage(this)"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db"
+            onclick="changeImage(this)"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1596464716127-f2a82984de30"
+            onclick="changeImage(this)"
+          />
+        </div>
+      </div>
+
+      <div class="product-info">
+        <h2>Minoxi Applicator Pro</h2>
+        <p>
+          Інноваційний аплікатор для точного нанесення міноксидилу. Рівномірний
+          розподіл без зайвих втрат.
+        </p>
+
+        <div class="price">6,90€</div>
+
+        <button class="buy-btn">Купити зараз</button>
+
+        <ul class="features">
+          <li>✔ Точне нанесення</li>
+          <li>✔ Економія рідини</li>
+          <li>✔ Легке очищення</li>
+          <li>✔ Підходить для будь-якого серуму</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews" id="reviews">
+      <h2>Що кажуть клієнти</h2>
+
+      <div class="review-cards">
+        <div class="review">
+          ⭐⭐⭐⭐⭐
+          <p>Дуже зручно! Більше не проливаю міноксидил.</p>
+        </div>
+        <div class="review">
+          ⭐⭐⭐⭐⭐
+          <p>Виглядає стильно і реально працює.</p>
+        </div>
+        <div class="review">
+          ⭐⭐⭐⭐☆
+          <p>За таку ціну — топ продукт.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <h2>Часті питання</h2>
+
+      <div class="faq-item">
+        <h3>Чи підходить для будь-якого міноксидилу?</h3>
+        <p>Так, підходить для більшості стандартних флаконів.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Чи легко чиститься?</h3>
+        <p>Так, достатньо промити теплою водою.</p>
+      </div>
+    </section>
+
+    <footer>© 2026 MinoxiPro</footer>
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <h2>Особистий кабінет</h2>
+
+        <form>
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Пароль" required />
+          <button type="submit">Увійти</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

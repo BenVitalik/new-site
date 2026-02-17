@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    color: white;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00ffcc;
+}
+
+.buy-header {
+    background: none;
+        border: none;
+        padding-right: 20px;
+        margin: 0;
+        color: white;
+        font-weight: normal;
+        cursor: pointer;
+        text-decoration: none;
+        transition: 0.3s;
+        font-size: 1rem;
+        /* трохи більший шрифт */
+}
+.buy-header:hover{
+    color: #00ffcc;
+}
+/* HERO */
+.hht{
+ padding-bottom: 20px;
+}
+
+.hero {
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1492724441997-5dc865305da7") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    padding: 15px 40px;
+    background: #00ffcc;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    transform: translateY(-5px);
+}
+
+/* PRODUCT */
+
+.product-section {
+    display: flex;
+    padding: 150px 10%;
+    gap: 80px;
+}
+
+.product-gallery img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.thumbnails {
+    margin-top: 15px;
+}
+
+.thumbnails img {
+    width: 80px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.thumbnails img:hover {
+    opacity: 1;
+}
+
+.product-info {
+    max-width: 500px;
+}
+
+.price {
+    font-size: 32px;
+    margin: 20px 0;
+    color: #00ffcc;
+}
+
+.buy-btn {
+    padding: 15px 40px;
+    background: #00ffcc;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    transform: scale(1.05);
+}
+
+.features {
+    margin-top: 20px;
+}
+
+.features li {
+    margin-bottom: 10px;
+}
+
+/* REVIEWS */
+
+.reviews {
+    padding: 120px 10%;
+    background: #141414;
+    text-align: center;
+}
+
+.review-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.review {
+    background: #1c1c1c;
+    padding: 30px;
+    border-radius: 20px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.review:hover {
+    transform: translateY(-10px);
+}
+
+/* FAQ */
+
+.faq {
+    padding: 120px 10%;
+}
+
+.faq-item {
+    margin-bottom: 40px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 50px;
+    background: black;
+    color: white;
+}
+.account-btn {
+    background: none;
+    border: none;
+    padding-right: 20px;
+    margin: 0;
+    color: white;
+    font-weight: normal;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1rem;
+        /* трохи більший шрифт */
+}
+
+.account-btn:hover {
+    color: #00ffcc;
+    /* той самий ефект, що в nav a:hover */
+}
+
+/* MODAL */
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+}
+
+.modal-content {
+    background: #1c1c1c;
+    padding: 40px;
+    border-radius: 20px;
+    width: 350px;
+    animation: scaleIn 0.3s ease;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background: #111;
+    border: 1px solid #333;
+    color: white;
+}
+
+.modal-content button {
+    width: 100%;
+    padding: 12px;
+    background: #00ffcc;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn {
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
